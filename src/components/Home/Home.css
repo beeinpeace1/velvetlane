@@ -1,0 +1,213 @@
+.homepage-holder {
+    background-image: url(http://s1.picswalls.com/wallpapers/2014/08/16/jewelry-picture_072526984_205.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.first-section h1 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.first-section p {
+    font-size: .8em;
+}
+
+/* section section styles */
+.second-section {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 100px;
+    font-weight: 300;
+}
+
+/* third section */
+
+.third-section {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 250px;
+    letter-spacing: 2px;
+}
+
+.third-section .content-holder {
+    width: 350px;
+    color: white;
+}
+
+.third-section h3 {
+    font-weight: 500;
+}
+
+.third-section p {
+    margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 200;
+}
+
+.third-section a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    border-bottom: 1px solid transparent;
+}
+
+.third-section a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* fourth section */
+
+.fourth-section {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 250px;
+    letter-spacing: 2px;
+}
+
+.fourth-section.onbody {
+    justify-content: start;
+    padding-top: 100px;
+}
+
+.fourth-section.master-setup p, .fourth-section.master-setup h3,  .fourth-section.master-setup a{
+    color: #333 !important;
+}
+
+.fourth-section .content-holder {
+    width: 450px;
+    color: white;
+}
+
+.fourth-section h3 {
+    font-weight: 500;
+}
+
+.fourth-section p {
+    margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.fourth-section a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    border-bottom: 1px solid transparent;
+}
+
+.fourth-section a:hover {
+    border-bottom: 1px solid white;
+}
+
+.fourth-section.master-setup a:hover {
+    border-bottom: 1px solid #333;
+}
+
+/* links container */
+.links-container {
+    margin-bottom: 20px;
+}
+
+.links-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* contact us about us */
+
+.about-us {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us button {
+    margin-left: 10px;
+    padding: 15px 30px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 80px;
+}
+.footer .wrapper_1600 {
+    padding: 0 2em 0 2em;
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+    margin: 0 auto 0 auto;
+    position: relative
+}
+
+.footer {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 2em 0;
+    background-color: #fff
+}
+
+.footer .rights {
+    float: left
+}
+
+.footer .rights p {
+    font-size: 12px
+}
+
+.footer .credit {
+    float: right
+}
+
+.footer .credit a {
+    font-size: 12px
+}
+
+.footer .social {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0%;
+    width: 200px;
+    text-align: center
+}
+
+.footer .social li {
+    margin: 0 5px;
+    display: inline-block
+}
+
+.footer .social li a img {
+    height: 16px
+}

@@ -1,0 +1,84 @@
+.customer-navbar {
+    color: white;
+    height: 130px;
+    padding: 0 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.customer-navbar .items-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.customer-navbar img {
+    width: 85px;
+    transition: .3s;
+}
+
+.customer-navbar button {
+    background: none;
+    border: 2px solid white;
+    padding: 10px;
+    transition: .3s;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+.customer-navbar button:hover {
+    background: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.customer-navbar.scrolled {
+    background: white;
+    color: #333;
+    height: 100px
+}
+
+.customer-navbar.scrolled button {
+    color: #333;
+    border-color: #333;
+}
+
+.customer-navbar.scrolled button:hover {
+    background: #333;
+    color: white;
+}
+
+.customer-navbar.scrolled img {
+    width: 60px;
+}
+
+#brand-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 125px;
+}
+
+#brand-holder span {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 6px;
+    transition: .3s;
+}
+
+.customer-navbar.scrolled #brand-holder span {
+    color: #333;
+    letter-spacing: 3px;
+}
