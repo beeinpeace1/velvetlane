@@ -66,7 +66,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 125px;
+    padding-left: 120px;
+    user-select: none;
 }
 
 #brand-holder span {
@@ -81,4 +82,95 @@
 .customer-navbar.scrolled #brand-holder span {
     color: #333;
     letter-spacing: 3px;
+}
+
+.customer-navbar {
+    z-index: 1001;
+}
+/* menu */
+
+#menu-check {
+    display: none;
+}
+
+.menu-button label {
+    user-select: none;
+}
+
+.menu-button label i {
+    transition: .3s;
+}
+
+.menu-button label:hover {
+    cursor: pointer;
+}
+
+.menu-overlay {
+    position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    transition: .2s;
+    opacity: 0;
+}
+
+.menu-overlay.overlay-op {
+    opacity: 1;
+}
+
+/* menu styles */
+
+.menu-links-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #bbb;
+    padding-top: 250px;
+}
+
+.contact-us-overlay {
+    margin-top: 80px;
+}
+
+.contact-us-overlay ul{
+    display: flex;
+    justify-content: center;
+    color: #bbb;
+}
+
+.menu-links-holder ul, .menu-links-holder li, .contact-us-overlay ul , .contact-us-overlay li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.06em;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 2.3em;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: .12s;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+.contact-us-overlay li {
+    font-size: .80em;
+}
+
+.contact-us-overlay li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.menu-links-holder li:hover {
+    color: #fff;
+    font-size: 1.09em;
+}
+
+.contact-us-overlay li:hover {
+    color: #fff;
+    font-size: .83em;
 }

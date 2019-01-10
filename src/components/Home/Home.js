@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Footer from './../Footer/Footer'
+
 import "./Home.css";
 
 let thirdSection =
@@ -11,8 +12,10 @@ let fourthSection =
 class Home extends Component {
   render() {
     return (
+      
+
       <div>
-        <div className="homepage-holder">
+          <div className="homepage-holder">
           <div className="first-section">
             <h1>FINE JEWELRY VISUALIZATIONS</h1>
             <p>We Know How To Present Your Jewelry</p>
@@ -178,9 +181,12 @@ class Home extends Component {
             <button className="btn btn-md btn-secondary">ABOUT US</button>
             <button className="btn btn-md btn-secondary">CONTACT US</button>
           </div>
+
           <Footer/>
-        </div>
+          </div>
+
       </div>
+
     );
   }
 }
