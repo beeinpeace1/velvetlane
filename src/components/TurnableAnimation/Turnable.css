@@ -1,0 +1,9 @@
+.canvas-holder {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.bg-dark {
+    background: #000 !important;
+}

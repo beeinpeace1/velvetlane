@@ -4,6 +4,8 @@ import Home from './components/Home/Home'
 import logo_white from './assets/images/logo_white.png'
 import logo_dark from './assets/images/logo_dark.png'
 import { Scrollbars } from 'react-custom-scrollbars';
+import { Route } from 'react-router-dom';
+import Turnable from './components/TurnableAnimation/Turnable';
 
 import './App.css';
 
@@ -26,10 +28,11 @@ class App extends Component {
   render() {
     return (
       <Scrollbars style={{ height: "100vh" }} onScroll={this.handleScroll}>
-      <div className="App">
-        <Navbar />
-        <Home />
-       </div>
+        <div className="App">
+          <Navbar />
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/turnable" component={Turnable}/>
+        </div>
        </Scrollbars>
     );
   }

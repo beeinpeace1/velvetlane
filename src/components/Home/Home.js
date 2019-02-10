@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Footer from './../Footer/Footer'
+import Footer from "./../Footer/Footer";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 
@@ -8,14 +9,11 @@ let thirdSection =
 let fourthSection =
   "http://s1.picswalls.com/wallpapers/2014/08/16/jewelry-desktop-backgrounds_072525458_205.jpg";
 
-
 class Home extends Component {
   render() {
     return (
-      
-
       <div>
-          <div className="homepage-holder">
+        <div className="homepage-holder">
           <div className="first-section">
             <h1>FINE JEWELRY VISUALIZATIONS</h1>
             <p>We Know How To Present Your Jewelry</p>
@@ -62,7 +60,7 @@ class Home extends Component {
                 details of your pieces, turntable animation will "bring life" to
                 your jewelry
               </p>
-              <a href="#">EXPLORE</a>
+              <Link to="/turnable">EXPLORE</Link>
             </div>
           </div>
           <div
@@ -151,42 +149,58 @@ class Home extends Component {
               </p>
             </div>
           </div>
-            
+
           <div className="links-container container">
             <div className="row">
               <div className="col-4">
-                <img src="https://images.pexels.com/photos/1454994/pexels-photo-1454994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
+                <img
+                  src="https://images.pexels.com/photos/1454994/pexels-photo-1454994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt=""
+                />
               </div>
               <div className="col-4">
-                <img src="https://images.pexels.com/photos/618701/pexels-photo-618701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
+                <img
+                  src="https://images.pexels.com/photos/618701/pexels-photo-618701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt=""
+                />
               </div>
               <div className="col-4">
-                <img src="https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
+                <img
+                  src="https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt=""
+                />
               </div>
             </div>
             <div className="row">
-            <div className="col-4">
-                <img src="https://images.pexels.com/photos/168927/pexels-photo-168927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
+              <div className="col-4">
+                <img
+                  src="https://images.pexels.com/photos/168927/pexels-photo-168927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt=""
+                />
               </div>
               <div className="col-4">
-                <img src="https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
+                <img
+                  src="https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt=""
+                />
               </div>
               <div className="col-4">
-                <img src="https://images.pexels.com/photos/1660521/pexels-photo-1660521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
+                <img
+                  src="https://images.pexels.com/photos/1660521/pexels-photo-1660521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt=""
+                />
               </div>
             </div>
           </div>
-          
+
           <div className="about-us container">
             <button className="btn btn-md btn-secondary">ABOUT US</button>
             <button className="btn btn-md btn-secondary">CONTACT US</button>
           </div>
 
-          <Footer/>
-          </div>
-
+          <Footer />
+        </div>
       </div>
-
     );
   }
 }

@@ -27,10 +27,11 @@ class Navbar extends Component {
   }
   
   render() {
+    let turnable = window.location.pathname.indexOf('turnable') > -1 ? "bg-dark": "";
     return (
       <div>
         <header>
-          <nav class="customer-navbar">
+          <nav class={`customer-navbar ${turnable}`}>
               <div className="items-holder">
               <div class="menu-button">
                 <input type="checkbox" id="menu-check"/>
